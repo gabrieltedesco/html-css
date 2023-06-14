@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+    }
+    header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    nav {
+        background-color: aquamarine;
+        padding: 5px;
+        width: 200px;
+        box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.618); 
+    }
+    nav > a {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0px 6.5px;
+    }
+    nav > a:hover {
+        text-decoration: underline;
+        color: yellow;
+    }
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    section {
+        padding: 5px;
+    }
+    article {
+        background-color: lightgray;
+        padding: 5px;
+        text-align: justify;
+        border-radius: 0px 15px;
+    }
+    article > aside {
+        background-color: rgb(141, 139, 139);
+        padding: 2px;
+        margin: 5px;
+    }
+    aside > p {
+        padding: 0px 5px;
+        margin: 0px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+    }
+    footer > p {
+        margin: 0px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Economia Esportes Política Saúde
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quibusdam amet minima eveniet possimus quos unde quae sit esse molestias aperiam beatae tempora quod impedit temporibus suscipit, deserunt iste reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis sed temporibus iste eum perspiciatis repellat accusamus fuga harum dolorem non tempora, excepturi, laborum ullam similique incidunt, ducimus ab in?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima dicta libero esse autem unde ullam, impedit aliquid repudiandae ut debitis accusamus, et quam repellat, animi quos? Illum, ratione tenetur!</p>
+                <aside>
+                    <p>Escrito por João Reis</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+            <p>Desenvolvido por Gabriel Tedesco</p>
+    </footer>
+    
+</body>
+</html>

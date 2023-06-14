@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+
+body{
+    background-image: linear-gradient(90deg, #CCEA8D 80%, #A6BC09);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #a7bc0991;
+    
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+
+h1  {
+    font: italic bolder 1.7em 'Verdana', 'Tahoma', sans-serif;
+}
+
+#principal {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.intro {
+    color: blue;
+}
+.desenv {
+    color: red;
+}
+.conc {
+    color: gray;
+}
