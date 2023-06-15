@@ -7,34 +7,91 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 200px;
-            height: 200px;
+            width: 600px;
+            height: 180px;
+            position: relative;
         }
-        td {
-            border: 1px solid black ;
-            padding: 6px;
-            text-align: center;
+        div#container {
+            overflow-x: auto; /*rolagem lateral somente com a tabela*/
+        }
+        caption {
+            font-weight: bold;
+            padding: 5px;
+        }
+        thead {
+            background-color: darkslategrey;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: darkslategray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 5px;
             vertical-align: center; /*middle?*/
+        }
+        col.cgrupo {
+            background-color: gold;
         }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>A1</td>
-            <td>A2</td>
-            <td>A3</td>
-        </tr>
-        <tr>
-            <td>B1</td>
-            <td>B2</td>
-            <td>B3</td>
-        </tr>
-        <tr>
-            <td>C1</td>
-            <td>C2</td>
-            <td>C3</td>
-        </tr>
-    </table>
+    <h1>Tabelas e algumas tags</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cestado">
+                <col class="cpop">
+                <col class="cgrupo" span="2">
+            </colgroup>
+    
+            <caption>População de 3 estados brasileiros</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 80px;">População</th>
+                    <th scope="col">Região</th>
+                    <th scope="col">UF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>45.900.000</td>
+                    <td rowspan="3">SE</td>
+                    <td>SP</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>21.100.000</td>
+                    <td>MG</td>
+    
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>17.200.000</td>
+                    <td>RJ</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>14.800.000</td>
+                    <td>NE</td>
+                    <td>BA</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td><strong>84.200.000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
