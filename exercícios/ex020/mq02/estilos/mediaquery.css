@@ -1,0 +1,53 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+/*versão para demais dispositivos*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url('../../imagens/back-print.jpg'); /*DESNECESSÁRIO*/
+    }
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita  por meio de MediaQuery';
+    }
+    img#smartphone {display: none;}
+    img#impressora {display: block;}
+}
+/*sem configurações para dispositivos móveis*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url('../../imagens/back-tablet.jpg');
+    }
+    img#smartphone {display: none;}
+    img#tablet {display: block;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url('../../imagens/back-pc.jpg');
+    }
+    img#smartphone {display: none;}
+    img#notebook {display: block;}
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../../imagens/back-tv.jpg');
+    }
+    main {
+        width: 700px;
+    }
+    img#smartphone {display: none;}
+    img#televisao {display: block;}
+}

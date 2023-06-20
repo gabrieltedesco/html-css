@@ -7,7 +7,7 @@ html {
     font: 1em Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: lightgrey;
+    background-color: lightcoral;    /*mudança de tela.css*/
 }
 header > h1 {
     text-align: center;

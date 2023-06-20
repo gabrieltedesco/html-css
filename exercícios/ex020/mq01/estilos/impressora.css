@@ -1,5 +1,15 @@
 @charset "UTF-8";
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
+}
+html {
+    font: 1.5em 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+menu {
+    display: none; /*desnecessário mosstrar o menu de um site em uma impressão*/
+}
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
 }
