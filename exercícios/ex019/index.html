@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" 
+                                                required size="15" placeholder="Seu nome" autocomplete="username"></p>
+            <p><label for="isenha">Senha: </label> <input type="password" name="senha" id="isenha" 
+                                                required minlength="8" autocomplete="new-password"></p>
+
+            <p>
+                <input type="checkbox" name="basquete" id="ibas"><label for="ibas">Basquete</label>
+                <input type="checkbox" name="futebol" id="ifut"><label for="ifut">Futebol</label>
+                <input type="checkbox" name="volei" id="ivol"><label for="ivol">Vôlei</label>
+            </p>
+                <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+            <p>
+            <p>
+                <label for="ifoto">Foto de perfil: </label><input type="file" name="foto" id="ifoto">
+            </p>
+            <p>
+                <label for="inivel">Felicidade: </label><input type="range" name="nivel" id="inivel" min="1" max="10" value="1"
+                oninput="ivalor.innerHTML = Number(inivel.value)">
+                <output id="ivalor">1</output>
+            </p>
+
+            <p>
+                <label for="iestado">Estado: </label>
+                <select name="estado" id="iestado">
+                    <optgroup label="Região Sul">
+                        <option value="PR" selected>Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Faculdade: </label>
+                <input type="text" name="prof" id="iprof" list="listaprof" placeholder="Se necessário, digite-a">
+                <datalist id="listaprof">
+                    <option value="MED">Médico</option>
+                    <option value="ENG">Engenharia</option>
+                    <option value="DIR">Direito</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Sua opinião: </label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
