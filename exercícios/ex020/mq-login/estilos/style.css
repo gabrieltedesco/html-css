@@ -1,0 +1,118 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+    font: 1em Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*versão mobile first*/
+
+html {
+    height: 100vh;
+}
+body {
+    background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+section {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 78vh;
+
+/**/
+
+} 
+div#imagem {
+    background: white url('../login.jpg') center center/cover no-repeat;
+    height: 30vh;
+    border-radius: 20px 20px 0px 0px;
+    display: block;
+}
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+fieldset {
+    border: none;
+}
+h2 {
+    font: 700 1.4em Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+#texto {
+    font: 0.8em 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+
+/**/
+
+}
+#iemail, #isenha {
+    background-color:  #68dcd8;
+    font-size: 0.9em;
+    border: 1px solid black;
+    height: 100%;
+    width: calc(100% - 47px);
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-11.5px);
+}
+#icone {
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+}
+.label {
+    background-color: #5f2c82;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    display: block;
+}
+#entrar {
+    background-color:  #53b9b6;
+    font-size: 0.9em;
+    color:white;
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+#entrar:hover {
+    background-color:  #3e8986;
+}
+#esquecer {
+    background-color:  white;
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 0.9em;
+    border: 1px solid rgba(0, 0, 0, 0.66);
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
