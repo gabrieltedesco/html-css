@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediaQuery</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
+<body onresize="mudaTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="hamburguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="links">
             <ul>
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Saúde</a></li>
+                <li><a href="#">Tecnologia</a></li>
             </ul>
         </menu>
     </header>
@@ -24,7 +27,25 @@
         <article>
             <h2>Titulo</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non rerum fugiat delectus harum ut atque tempore modi aut obcaecati! Molestias maiores explicabo blanditiis earum nemo ipsa quo fugiat modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus tempore odio a animi rem, quasi reiciendis similique sed voluptatem quidem maiores veniam, explicabo dolor aperiam laboriosam earum rerum labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nisi magni quisquam quibusdam natus reiciendis id fugiat quae molestias aliquid placeat corporis minima et nulla incidunt, esse illo nobis rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non rerum fugiat delectus harum ut atque tempore modi aut obcaecati! Molestias maiores explicabo blanditiis earum nemo ipsa quo fugiat modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus tempore odio a animi rem, quasi reiciendis similique sed voluptatem quidem maiores veniam, explicabo dolor aperiam laboriosam earum rerum labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nisi magni quisquam quibusdam natus reiciendis id fugiat quae molestias aliquid placeat corporis minima et nulla incidunt, esse illo nobis rem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non rerum fugiat delectus harum ut atque tempore modi aut obcaecati! Molestias maiores explicabo blanditiis earum nemo ipsa quo fugiat modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus tempore odio a animi rem, quasi reiciendis similique sed voluptatem quidem maiores veniam, explicabo dolor aperiam laboriosam earum rerum labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nisi magni quisquam quibusdam natus reiciendis id fugiat quae molestias aliquid placeat corporis minima et nulla incidunt, esse illo nobis rem.</p>
         </article>
     </main>
+    <script>
+        function mudaTamanho(){
+            if (window.innerWidth >= 768) {
+                links.style.display = 'block'
+            } else {
+                links.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if (links.style.display == 'block') {
+                links.style.display = 'none'
+            } else {
+                links.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
