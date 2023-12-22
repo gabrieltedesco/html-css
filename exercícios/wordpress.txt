@@ -1,0 +1,6 @@
+painel: http://localhost/dnk/account/
+pedidos: http://localhost/dnk/account/orders/
+cadastro: http://localhost/dnk/account/edit-account/
+logout: 
+[my-user-name]
+[my-url-logout]
